@@ -13,27 +13,32 @@
         <h1>REGINA</h1>
     </div>
 
-    <div class="bgSesion">
-        ACCEDE
-        <div class="user">
-            Usuario:
-            <input type="text" name="usuario">
-        </div>
-        <div class="pass">
-            Contraseña:
-            <input type="text" name="contraseña">
-        </div>
-        <div class="iniciar">
-            <a class="boton" href="https://google.com">INICIAR</a>
-        </div>
-    </div>
+    <form class="form">
+        <h2 class="form_title"> Iniciar Sesión </h2>
+        <p class="form_paragraph">¿Aún no tienes una cuenta? <a href="https://www.google.com/" class="form_link">Entrar aquí</a> </p>
 
-    <div>
-        <h2>
-            Hola soy un colaborador
-            g
-        </h2>
-    </div>
+        <div class="form_container">
+            <div class="form_group">
+                <input type="text" id ="name" class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Nombre:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id ="user" class="form_input" placeholder=" ">
+                <label for="user" class="form_label">Usuario:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="text" id ="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">Contraseña:</label>
+                <span class="form_line"></span>
+            </div>
+
+            <input type="submit" class="form_submit" value="Entrar">
+
+        </div>
+
+    </form>
 
     <footer>
         Estdsaasdadfafsgdsnudfhsgyugdfstyfdcv
