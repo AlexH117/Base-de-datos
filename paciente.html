@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paciente</title>
+    <link rel="stylesheet" href="stylePaciente.css">
+</head>
+<body>
+    <!---- ZONA DE LA CABECERA O DONE ESTA LA LISTA DE BARRAS-->
+    <header class="header">
+
+        <nav>
+            <ul class="nav-links">
+                <li class="vent_paciente"><a href="#">PACIENTES</a></li>
+                <span class="form_line"></span>
+                <li class="vent_expedients"><a href="#">EXPEDIENTES</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+
+            <img src="images/IMSS.jpg" alt="Imagen empresa" style="padding-right: 15px;">
+
+            <div class="datoDia" style="font-size: 14px;">
+                <p>Dr. Regina Lopez</p>
+                <p class="fecha"></p>
+                <p class="tiempo"></p>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="salir"><a href="#">SALIR</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- titulo de la pregunta -->
+    <div class="subtitleContainer">
+        <h2>¿QUÉ DESEA HACER?</h2>
+    </div>
+
+    <!--ZONA DONDE MUESTA LAS 2 OPCIONES DE BAJA Y ALA DE LOS PACIENTES-->
+    <div class="container_opciones">
+
+        <div class="altaPaciente">
+            <div class="alta">
+                <h2 class="alta_text"> ALTA PACIENTE</h2>
+                <button class="alta_button"><a href="pacienteBaja.html">CONTINUAR</a></button>
+            </div>
+        </div>
+
+        <div class="altaPaciente">
+            <div class="alta">
+                <h2 class="alta_text"> BAJA PACIENTE</h2>
+                <button class="alta_button"><a href="pacienteBaja.html">CONTINUAR</a></button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+
+<script src="datoDia.js"></script>
+
+</html>
