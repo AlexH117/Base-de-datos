@@ -58,6 +58,15 @@ body{
     background-color: #D9D9D9;
 }
 
+.header .logo .nav-links .salir:hover{
+    background-color: rgba(217, 25, 25, 0.775);
+}
+
+.header .logo .nav-links .salir:hover a{
+    color: white;
+}
+
+
 .header .nav-links li:hover a{
     color: black;
 }
