@@ -9,18 +9,21 @@
 </head>
 <body>
 
+    <!------ ZONA DEL MENU DE ARRIBA DONDE ESTA PACIENTES EXPEDIENTES SALIR Y LA INFORMACION DE LA DR-->
     <header class="header">
 
         <nav>
             <ul class="nav-links">
-                <li><a href="#">PACIENTES</a></li>
-                <li><a href="#">EXPEDIENTES</a></li>
+                <li class="vent_paciente"><a href="#">PACIENTES</a></li>
+                <span class="form_line"></span>
+                <li class="vent_expedients"><a href="#">EXPEDIENTES</a></li>
             </ul>
         </nav>
 
         <div class="logo">
 
-            <img src="#" alt="Imagen empresa" style="padding-right: 15px;">
+            <img src="camara_icon.png" alt="Imagen empresa" style="padding-right: 15px;">
+            
             <div class="datoDia" style="font-size: 14px;">
                 <p>Dr. Regina Lopez</p>
                 <p class="fecha"></p>
@@ -36,6 +39,39 @@
         </div>
 
     </header>
+    
+    <!------- ZONA DE TITULO INTERMEDIO Y EL BUSCADOR-->
+
+    <div class="subtitle">
+        <h2 class="subtitle_title">BAJA PACIENTE</h2>
+    </div>
+
+    <div class="container">
+        
+        <div class="container_text">
+            
+            <h2 class="container_selecc"> SELECCIONE PACIENTE </h2>
+
+            <form class="form">
+                <div class="form_container">
+                    <div class="form_group">
+                        <h2>BUSCAR :</h2>
+                        <input type="text" id ="name" class="form_input" placeholder="C U R P">
+                        <span class="form_line"></span>
+                    </div>
+            
+                </div>
+            
+            </form>
+            
+        </div>
+
+    </div>
+
+    <!--- ZONA DE LAS TABLA-->
+    <div>
+        
+    </div>
 
 </body>
 
