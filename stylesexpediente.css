@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("assets/Oswald-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    background-color: #D9D9D9;
+}
+
+.header{
+    background-color: blue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+.header .btn button{
+    font-weight: 700;
+    color: white;
+    padding: 9px 25px;
+    background: pink;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.header .btn button:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+
