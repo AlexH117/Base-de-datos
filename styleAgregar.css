@@ -20,23 +20,23 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 85px;
+    height: 90px;
     padding: 15px 10%;
 }
 
 .logo{
     display: flex;
-    justify-content: space-around;
+    margin-top: 20px;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header .logo{
     cursor: pointer;
-    font-size: 10px;
 }
 
 .header .logo img{
-    height: 70px;
+    height: 60px;
     width: auto;;
 }
 
@@ -46,10 +46,10 @@ body{
 
 .header .nav-links li{
     display: inline-block;
+    padding-top: 30px;
     padding: 0 50%;
     margin-left: 25px;
     margin-top: 30px;
-    height: 50px;
     padding: 9px 25px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
@@ -99,7 +99,7 @@ body{
     padding-right: 15px;
     padding-bottom: 10px;
 
-    font-size: 25px;
+    font-size: 13px;
     text-align: center;
 
     text-align: center;
@@ -109,16 +109,17 @@ body{
 }
 
 .container_text{
-    margin-top: 25px;
+    margin-top: 45px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 85px;
     padding: 15px 10%;
 }
 
 .container_text .container_selecc{
-    margin-top: 30px;
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 .form{
@@ -138,13 +139,17 @@ body{
     --color: #57575757;
 }
 
+.form_group .busc{
+    font-size: 20px;
+}
+
 .form_input{
     font-family: 'Lato', sans-serif;
     width: 400px;
     background: none;
     color: #706c6c;
     text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     padding: .6em .3em;
     border: none;
     outline: none;
@@ -162,7 +167,7 @@ body{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-color: #32599C;
     transform: scale(0);
     transform: left bottom;
@@ -172,4 +177,15 @@ body{
 .form_input:focus ~ .form_line,
 .form_input:not(:placeholder-shown) + .form_line{
     transform: scale(1);
+}
+
+/*---------- ZONA DE ESTILOS DEL APARTADO DE LAS TABLAS ------------*/
+
+.contenedorTabla{
+    margin-top: 35px;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: auto;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),  0 0  0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+
 }
