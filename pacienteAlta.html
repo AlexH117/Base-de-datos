@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alta Paciente</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='stylePacienteAlta.css'>
+</head>
+<body>
+
+    <!------ ZONA DEL MENU DE ARRIBA DONDE ESTA PACIENTES EXPEDIENTES SALIR Y LA INFORMACION DE LA DR-->
+    <header class="header">
+
+        <nav>
+            <ul class="nav-links">
+                <li class="vent_paciente"><a href="paciente.html">PACIENTES</a></li>
+                <span class="form_line"></span>
+                <li class="vent_expedients"><a href="#">EXPEDIENTES</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+
+            <img src="Nueva carpeta/IMSS.jpg" alt="Imagen empresa" style="padding-right: 15px;">
+
+            <div class="datoDia" style="font-size: 14px;">
+                <p>Dr. Regina Lopez</p>
+                <p class="fecha"></p>
+                <p class="tiempo"></p>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li class="salir"><a href="index.html">SALIR</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    
+    <!-- SUBTITLE -->
+    <div class="subtitle">
+        <h2 class="subtitle_title">ALTA PACIENTE</h2>
+    </div>
+
+    <!-- FORMULARIO OPCION 1 -->
+    <div class="container_formulario">
+        
+        <div class="containerImagen">
+            <h2>Imagen aquí va</h2>
+        </div>
+        
+        <form class="formulario">
+            <div class="form_group">
+                <input type="text" id ="name" class="form_input" placeholder=" ">
+                <label for="name" class="form_label">Primer Apellido :</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id ="user" class="form_input" placeholder=" ">
+                <label for="user" class="form_label">Seguno Apellido :</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id ="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">Nombre (s):</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id ="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">Edad :</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id ="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">CURP :</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id ="password" class="form_input" placeholder=" ">
+                <label for="password" class="form_label">Número telefono:</label>
+                <span class="form_line"></span>
+            </div>
+            
+            <input type="submit" id="boton" class="form_submit" value="CONTINUAR" >
+
+        </form>
+
+    </div>
+
+</body>
+<script src="datoDia.js"></script>
+</html>

@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #e5e5f7;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    background-color: #D9D9D9;
+}
+
+.header{
+    background: #32599C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 15px 10%;
+}
+
+.logo{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 60px;
+    width: auto;;
+}
+
+.header .logo .nav-links li{
+    font-size: 15px;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding-top: 30px;
+    padding: 0 50%;
+    margin-left: 25px;
+    margin-top: 30px;
+    padding: 9px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links li:hover{
+    background-color: #D9D9D9;
+    border-radius: 50px;
+}
+
+.header .logo .nav-links .salir:hover{
+    background-color: rgba(217, 25, 25, 0.775);
+}
+
+.header .logo .nav-links .salir:hover a{
+    color: white;
+}
+
+
+.header .nav-links li:hover a{
+    color: black;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.datoDia{
+    color: white;
+}
+
+/*---------- ZONA DE ESTILO DEL FORMULARIO ---------------*/
+
+.subtitle{
+    margin-top: 30px;
+    margin-left: 30%;
+    margin-right: 30%;
+
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+    font-size: 13px;
+    text-align: center;
+
+    text-align: center;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),  0 0  0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-radius: 50px;
+    
+}
+
+/*------ ZONA ESTILO FORMULARIOS OPCION 1 -----*/
+
+.container_formulario{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: #e5e5f7;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),  0 0  0 2px rgb(255,255,255), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerImagen{
+    margin-left: 20%;
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 300px;
+    padding: 3% 0;
+}
+
+.formulario{
+    display: grid;
+    border-radius: 30px;
+    margin-right: 30%;
+    width: 400px;
+    padding: 3% 0;
+}
+
+.grupo_form{
+    margin-top: 15px;
+    gap: 2.5em;
+}
+
+.form_label_l{
+    margin-right: 10px;
+}
+/*--------- ZONA ESTILOS FORMULARIO OPCION 2 -------*/
+
+.form{
+    background-color: white;
+    margin: auto;
+    margin-top: 25px;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 2em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(0 0 0 / 30%);
+    text-align: center;
+}
+
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+
+.form_link{
+    font-weight: 400;
+    color: #000;
+}
+
+.form_container{
+    margin-top: 20px;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+    margin-top: 20px;
+    position: relative;
+    --color: #2420208b;
+}
+
+.form_input{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+}
+
+.form_input:focus,
+.form_input:not(:placeholder-shown){
+    color: #4d4646;
+}
+
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #3866f2;
+}
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form_submit{
+    margin-top: 15px;
+    background: #32599C;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.user {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #32599C;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_line,
+.form_input:not(:placeholder-shown) + .form_line{
+    transform: scale(1);
+}
+
+@media (max-width:425px){
+    .form_title{
+        font-size: 1.8rem;
+    }
+}
+
+.user input {
+
+    padding-left: 50px;
+    margin-left: 30px;
+}
+
+.pass {
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 50px;
+}
+
+.pass input {
+    padding-left: 50px;
+    margin-left: 10px;
+}
+
+.boton {
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 40;
+    padding-right: 40;
+    background-color: #32599C;
+    border-color: #32599C;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 10px;
+}
