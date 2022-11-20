@@ -126,6 +126,7 @@ body{
     justify-content: space-around;
 }
 
+/*------- ZONA DEL ESTILOS DEL CONTENEDOR O DEL DIV DE LA SECCION IMAGEN*/
 .containerImagen{
     margin-left: 20%;
     border-radius: 30px;
@@ -133,6 +134,35 @@ body{
     width: 300px;
     padding: 3% 0;
 }
+
+.containerOpcionesImagen{
+    margin-top: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.containerOpcionesImagen h3{
+    text-align: center;
+}
+
+.imagenLoad{
+    background-color: #706c6c;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 300px;
+    color: #706c6c;
+   padding-top: 50%; 
+    text-align: center;
+}
+
+.imgLoad{
+    height: 50px;
+    width: 50px;
+}
+
+/*-------- ZONA DE ESTILOS DEL FORMULARIO ---------*/
 
 .formulario{
     display: grid;
@@ -150,6 +180,7 @@ body{
 .form_label_l{
     margin-right: 10px;
 }
+
 /*--------- ZONA ESTILOS FORMULARIO OPCION 2 -------*/
 
 .form{
