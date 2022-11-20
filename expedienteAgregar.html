@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Agregar al expediente</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' href='stylePacienteAlta.css'>
+    <link rel='stylesheet' href='styleExpedienteAgregar.css'>
 </head>
 <body>
 
@@ -44,64 +44,71 @@
         <h2 class="subtitle_title">AGREGAR AL EXPEDIENTE</h2>
     </div>
 
-    <!-- FORMULARIO OPCION 1 -->
+    <!-- FORMULARIO -->
     <div class="container_formulario">
-        
-        <div class="containerImagen">
-            <div class="imagenLoad">
-            </div>
 
-            <div class="containerOpcionesImagen">
-                <h3>
-                    <form class="subirImage">
-                        Seleccionar imagen:
-                        <input type="file" name="archivo" id="archivo" multiple>
-                        <br><button id="boton" type="button">Selecciona un archivo</button>
-                    </form>
-                </h3>
-            </div>
+        <div class="formularioHead">
+
+            <form class="grupo1">
+                <div class="form_group">
+                    <input type="text" id ="name" class="form_input" placeholder=" ">
+                    <label for="name" class="form_label">Clave única :</label>
+                    <span class="form_line"></span>
+                </div>
+            </form>
+
+            <form class="grupo1">
+                <div class="form_group">
+                    <input type="text" id ="name" class="form_input" placeholder=" ">
+                    <label for="name" class="form_label">Nombre Completo :</label>
+                    <span class="form_line"></span>
+                </div>
+            </form>
 
         </div>
 
-        <form class="formulario">
-            <div class="form_group">
-                <input type="text" id ="name" class="form_input" placeholder=" ">
-                <label for="name" class="form_label">Primer Apellido :</label>
-                <span class="form_line"></span>
-            </div>
+        <div class="formularioHead">
 
-            <div class="form_group">
-                <input type="text" id ="user" class="form_input" placeholder=" ">
-                <label for="user" class="form_label">Seguno Apellido :</label>
-                <span class="form_line"></span>
-            </div>
+            <form class="grupo1">
+                <div class="form_group">
+                    <input type="text" id ="motivo" class="form_input" placeholder=" ">
+                    <label for="motivo" class="form_label">Motivo de la consulta :</label>
+                    <span class="form_line"></span>
+                </div>
 
-            <div class="form_group">
-                <input type="text" id ="password" class="form_input" placeholder=" ">
-                <label for="password" class="form_label">Nombre (s):</label>
-                <span class="form_line"></span>
-            </div>
+                <div class="form_group">
+                    <input type="text" id ="diagnostico" class="form_input" placeholder=" ">
+                    <label for="diagnostico" class="form_label">Diagnostico :</label>
+                    <span class="form_line"></span>
+                </div>
 
-            <div class="form_group">
-                <input type="text" id ="password" class="form_input" placeholder=" ">
-                <label for="password" class="form_label">Edad :</label>
-                <span class="form_line"></span>
-            </div>
+                <div class="form_group">
+                    <input type="text" id ="tratamiento" class="form_input" placeholder=" ">
+                    <label for="tratamiento" class="form_label">Tratamiento :</label>
+                    <span class="form_line"></span>
+                </div>
 
-            <div class="form_group">
-                <input type="text" id ="password" class="form_input" placeholder=" ">
-                <label for="password" class="form_label">CURP :</label>
-                <span class="form_line"></span>
-            </div>
+                <div class="form_group">
+                    <input type="text" style="width: 280px; height: 120px;" id ="nota" class="form_input" placeholder=" ">
+                    <label for="nota" class="form_label">Notas :</label>
+                    <span class="form_line"></span>
+                </div>
 
-            <div class="form_group">
-                <input type="text" id ="password" class="form_input" placeholder=" ">
-                <label for="password" class="form_label">Número telefono:</label>
-                <span class="form_line"></span>
-            </div>
+            </form>
+
+            <form class="grupo1">
+                <div class="form_group">
+                    <h2 style="font-size: 15px;">Fecha :</h2>
+                    <input type="date" id ="fecha" class="form_input" placeholder=" ">
+                    <span class="form_line"></span>
+                </div>
+
+                
+                <input type="submit" id="continuar" class="form_submit" value="CONTINUAR" >
+
+            </form>
             
-            <input type="submit" id="boton" class="form_submit" value="CONTINUAR" >
-        </form>
+        </div>
 
     </div>
 
