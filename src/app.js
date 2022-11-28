@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const {engine} = require('express-handlebars');
 const myconnection = require('express-myconnection');
 const mysql = require('mysql');
@@ -6,8 +7,13 @@ const session = require('express-session');
 const bodyParser = require('body-parser');
 const { request, response } = require('express');
 
+const loginRoutes = require('./routes/login');
+
 const app = express();
 app.set('port', 4000);
+
+// Hace caso a la carpeta public
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('views', __dirname + '/views');
 app.engine('.hbs', engine({
@@ -37,6 +43,8 @@ app.use(session({
 app.listen(app.get('port'), () => {
    console.log('Listening on port ', app.get('port'));
 });
+
+app.use('/', loginRoutes);
 
 app.get('/', (req, res) => {
    res.render('home');

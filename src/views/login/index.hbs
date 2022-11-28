@@ -1,0 +1,30 @@
+
+    <form class="form" id="formulario">
+            <h2 class="form_title"> Iniciar Sesión </h2>
+
+            <div class="form_container">
+                
+                <div class="form_group">
+                    <input type="text" id ="name" class="form_input" placeholder=" ">
+                    <label for="user" class="form_label">Usuario:</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="text" id ="password" class="form_input" placeholder=" ">
+                    <label for="password" class="form_label">Contraseña:</label>
+                    <span class="form_line"></span>
+                </div>
+
+                <button type="submit" id="myButton" class="form_submit" >INICIAR</button>
+
+                
+                <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                        window.location.href = "paciente.html"
+                    };
+                </script>
+                
+
+            </div>
+
+        </form>
