@@ -1,1 +1,48 @@
-{{{body}}}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/stylesMain.css">
+        <title>Inicio de sesión</title>
+    </head>
+
+    <body>
+        <div class="upHead">
+            <h1>REGINA</h1>
+        </div>
+
+        <form class="form" id="formulario">
+            <h2 class="form_title"> Iniciar Sesión </h2>
+
+            <div class="form_container">
+                
+                <div class="form_group">
+                    <input type="text" id ="user" class="form_input" placeholder=" ">
+                    <label for="user" class="form_label">Usuario:</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="text" id ="password" class="form_input" placeholder=" ">
+                    <label for="password" class="form_label">Contraseña:</label>
+                    <span class="form_line"></span>
+                </div>
+
+                <button type="button" id="myButton" class="form_submit" >INICIAR</button>
+
+                
+                <script type="text/javascript">
+                    document.getElementById("myButton").onclick = function () {
+                        window.location.href = "paciente.html"
+                    };
+                </script>
+                
+
+            </div>
+
+        </form>
+
+    </body>
+
+</html>

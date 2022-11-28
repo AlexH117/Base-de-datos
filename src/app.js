@@ -4,6 +4,7 @@ const myconnection = require('express-myconnection');
 const mysql = require('mysql');
 const session = require('express-session');
 const bodyParser = require('body-parser');
+const { request, response } = require('express');
 
 const app = express();
 app.set('port', 4000);
@@ -19,13 +20,19 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 
-/* app.use(myconnection(mysql, {
+app.use(myconnection(mysql, {
    host: 'localhost',
    user: 'root',
    password: '',
    port: 3306,
-   database: ''
-})); */
+   database: 'nodelogin'
+}));
+
+app.use(session({
+   secret: 'secret',
+   resave: true,
+   saveUninitialized: true
+}));
 
 app.listen(app.get('port'), () => {
    console.log('Listening on port ', app.get('port'));
